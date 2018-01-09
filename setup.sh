@@ -6,6 +6,7 @@ sudo apt install -y cmake g++ git htop pkg-config libopenblas-dev libopencv-dev 
 sudo chown -R `whoami`:`whoami` /opt
 cd /opt
 
+wget https://repo.continuum.io/archive/Anaconda3-5.0.0-Linux-x86_64.sh
 echo "bb2656314d22aecae6af243ddbbfb32c Anaconda3-5.0.0-Linux-x86_64.sh" | md5sum -c && exit
 bash Anaconda3-5.0.0-Linux-x86_64.sh
 
