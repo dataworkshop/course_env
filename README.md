@@ -1,15 +1,15 @@
 # course_env
 Environemnt for course: practical machine learning
 
-## Docker [dev]
+## Docker [latest]
 
 Run docker container:
-docker run -d -p 8080:8080 -v /path/to/modules/:/home/my_workspace/ --name dataworkshop-env bsekiewicz/dataworkshop-enviroment:dev
+docker run -d --name dataworkshop-notebook -v /path/to/modules/:/home/workspace/modules/ -p 8888:8888 dataworkshop-env:latest
 
-Run jupyter notebook in containter:
-docker exec -it dataworkshop-env bash
-cd /home/my_workspace/
-jupyter notebook --ip=0.0.0.0 --port=8080 --allow-root
+Check token:
+docker logs dataworkshop-notebook
 
 Open browser and goto:
-localhost:8080 or another remote host addres
+localhost:8888 or another remote host address
+
+Enjoy!
