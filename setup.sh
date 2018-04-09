@@ -33,6 +33,12 @@ python setup.py install
 ### Catboost
 pip --no-cache-dir install https://github.com/catboost/catboost/releases/download/v0.5.2/catboost-0.5.2-cp36-none-manylinux1_x86_64.whl
 
+### tf-cnnvis
+cd /opt
+git clone https://github.com/InFoCusp/tf_cnnvis.git
+cd tf_cnnvis
+python setup.py install
+python setup.py clean
 
 ### MxNet
 #cd /opt
