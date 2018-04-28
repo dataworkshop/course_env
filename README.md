@@ -15,6 +15,8 @@ There are at least two dimensions to how to setup the environment: *physical* an
 
 ## Bash script
 1. Prepare a machine (the script have tested on Ubuntu 16.04)
+
+*Note*. Example, how to setup GCC.
 ![](images/inst1.png)
 ![](images/inst2.png)
 ![](images/inst3.png)
