@@ -46,6 +46,7 @@ Wait some time (up to 10 secs).
 ![](images/setup5.png)
 5. It took some time (be patient)
 6. Test it (e.g. type in the console `ipython`)
+![](images/ipython.png)
 7. Be happy :)
 
 ## Jupyter
