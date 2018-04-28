@@ -17,7 +17,13 @@ There are at least two dimensions to how to setup the environment: *physical* an
 1. Prepare a machine (the script have tested on Ubuntu 16.04)
 2. Log in to the machine via ssh
 3. Download bash script: `wget https://raw.githubusercontent.com/dataworkshop/course_env/master/setup.sh`
+![](images/setup1.png)
+
 4. Run it: `bash setup.sh`
+![](images/setup2.png)
+![](images/setup3.png)
+![](images/setup4.png)
+![](images/setup5.png)
 5. It took some time (be patient)
 6. Test it (e.g. type in the console `ipython`)
 7. Be happy :)
