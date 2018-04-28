@@ -10,9 +10,10 @@ wget https://repo.continuum.io/archive/Anaconda3-5.0.0-Linux-x86_64.sh
 echo "bb2656314d22aecae6af243ddbbfb32c Anaconda3-5.0.0-Linux-x86_64.sh" | md5sum -c
 bash Anaconda3-5.0.0-Linux-x86_64.sh
 
-source ~/.bashrc
+export PATH="$HOME/anaconda3/bin:$PATH"
 
-#enter x3
+#update pip
+pip install --upgrade pip
 
 ### XGBoost
 cd /opt
