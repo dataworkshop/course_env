@@ -7,7 +7,7 @@ sudo chown -R `whoami`:`whoami` /opt
 cd /opt
 
 wget https://repo.continuum.io/archive/Anaconda3-5.0.0-Linux-x86_64.sh
-echo "bb2656314d22aecae6af243ddbbfb32c Anaconda3-5.0.0-Linux-x86_64.sh" | md5sum -c && exit
+echo "bb2656314d22aecae6af243ddbbfb32c Anaconda3-5.0.0-Linux-x86_64.sh" | md5sum -c
 bash Anaconda3-5.0.0-Linux-x86_64.sh
 
 source ~/.bashrc
@@ -17,7 +17,7 @@ source ~/.bashrc
 ### XGBoost
 cd /opt
 git clone --recursive https://github.com/dmlc/xgboost; cd xgboost
-make -j4
+make
 cd python-package
 python setup.py install
 
@@ -26,12 +26,13 @@ cd /opt
 git clone --recursive https://github.com/Microsoft/LightGBM ; cd LightGBM
 mkdir build ; cd build
 cmake ..
-make -j4
+make
 cd ../python-package
 python setup.py install
+python setup.py clean
 
 ### Catboost
-pip --no-cache-dir install https://pypi.python.org/packages/86/f8/432670972b891aebf872d6b705f02e269c8d83ff3b3e948a7d1c4722c4cd/catboost-0.5.2-cp36-none-manylinux1_x86_64.whl#md5=88b4ffb53d2767f779effb22e5d5d3cc
+pip install catboost=0.6.3
 
 ### tf-cnnvis
 cd /opt
@@ -48,9 +49,8 @@ python setup.py clean
 
 
 ### tensorflow & keras
-#conda install -c conda-forge -y tensorflow 
-pip --no-cache-dir install https://github.com/mind/wheels/releases/download/tf1.4-cpu/tensorflow-1.4.0-cp36-cp36m-linux_x86_64.whl
-conda install -c conda-forge -y keras==2.0.9
+pip --no-cache-dir install https://github.com/mind/wheels/releases/download/tf1.7-cpu/tensorflow-1.7.0-cp36-cp36m-linux_x86_64.whl
+conda install -c conda-forge -y keras==2.1.5
 
 ### others
 pip install hyperopt==0.1
@@ -69,11 +69,3 @@ python setup.py install --yes USE_AVX_INSTRUCTIONS
 
 pip install pandas_profiling==1.4.0
 pip install mpld3==0.3
-
-
-
-
-
-
-
-
