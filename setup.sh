@@ -12,6 +12,11 @@ bash Anaconda3-5.0.0-Linux-x86_64.sh
 
 export PATH="$HOME/anaconda3/bin:$PATH"
 
+## Configure jupyter
+jupyter notebook --generate-config
+sed -i -e "s/#c.NotebookApp.allow_origin = ''/c.NotebookApp.allow_origin = '*'/g" $HOME/.jupyter/jupyter_notebook_config.py
+sed -i -e "s/#c.NotebookApp.ip = 'localhost'/c.NotebookApp.ip = '0.0.0.0'/g" $HOME/.jupyter/jupyter_notebook_config.py
+
 #update pip
 pip install --upgrade pip
 
