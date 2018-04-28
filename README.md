@@ -16,6 +16,14 @@ There are at least two dimensions to how to setup the environment: *physical* an
 ## Bash script
 1. Prepare a machine (the script have tested on Ubuntu 16.04)
 2. Log in to the machine via ssh
+
+Here is an example how to quick login via ssh on GCC.
+*Note* your machine should be running.
+![](images/ssh1.png)
+
+Wait some time (up to 10 secs).
+![](images/ssh2.png)
+![](images/ssh3.png)
 3. Download bash script: `wget https://raw.githubusercontent.com/dataworkshop/course_env/master/setup.sh`
 ![](images/setup1.png)
 
