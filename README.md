@@ -21,6 +21,12 @@ There are at least two dimensions to how to setup the environment: *physical* an
 ![](images/inst2.png)
 ![](images/inst3.png)
 
+### Firewall Rules
+![](images/rule1.png)
+![](images/rule2.png)
+![](images/rule3.png)
+![](images/rule4.png)
+
 2. Log in to the machine via ssh
 
 Here is an example how to quick login via ssh on GCC.
