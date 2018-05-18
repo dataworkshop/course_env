@@ -62,6 +62,7 @@ conda install -c conda-forge -y keras==2.1.5
 pip install hyperopt==0.1
 pip install xgbfir==0.3.1
 pip install graphviz==0.8.1
+pip install livelossplot
 
 pip install scikit-image==0.13.1
 
