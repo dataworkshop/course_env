@@ -65,6 +65,7 @@ pip install graphviz==0.8.1
 pip install livelossplot
 pip install rfpimp==1.3
 pip install eli5==0.8
+pip install scikit-plot==0.3.7
 
 pip install scikit-image==0.13.1
 
