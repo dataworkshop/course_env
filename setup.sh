@@ -6,9 +6,10 @@ sudo apt install -y cmake g++ git htop pkg-config libopenblas-dev libopencv-dev 
 sudo chown -R `whoami`:`whoami` /opt
 cd /opt
 
-wget https://repo.continuum.io/archive/Anaconda3-5.0.0-Linux-x86_64.sh
-echo "bb2656314d22aecae6af243ddbbfb32c Anaconda3-5.0.0-Linux-x86_64.sh" | md5sum -c
-bash Anaconda3-5.0.0-Linux-x86_64.sh
+
+wget https://repo.continuum.io/archive/Anaconda3-5.3.1-Linux-x86_64.sh
+echo "334b43d5e8468507f123dbfe7437078f Anaconda3-5.3.1-Linux-x86_64.sh" | md5sum -c
+bash Anaconda3-5.3.1-Linux-x86_64.sh
 
 export PATH="$HOME/anaconda3/bin:$PATH"
 
@@ -38,7 +39,7 @@ python setup.py install
 python setup.py clean
 
 ### Catboost
-pip install catboost=0.6.3
+pip install catboost=0.12.2
 
 ### tf-cnnvis
 cd /opt
@@ -55,16 +56,18 @@ python setup.py clean
 
 
 ### tensorflow & keras
-pip --no-cache-dir install https://github.com/mind/wheels/releases/download/tf1.7-cpu/tensorflow-1.7.0-cp36-cp36m-linux_x86_64.whl
-conda install -c conda-forge -y keras==2.1.5
+#pip --no-cache-dir install https://github.com/mind/wheels/releases/download/tf1.7-cpu/tensorflow-1.7.0-cp36-cp36m-linux_x86_64.whl
+#conda install -c conda-forge -y keras==2.1.5
+conda install tensorflow
+conda install keras
 
 ### others
-pip install hyperopt==0.1
+pip install hyperopt==0.1.1
 pip install xgbfir==0.3.1
 pip install graphviz==0.8.1
-pip install livelossplot
+pip install livelossplot==0.3.0
 pip install rfpimp==1.3
-pip install eli5==0.8
+pip install eli5==0.8.1
 pip install scikit-plot==0.3.7
 pip install deepreplay==0.1.1a2
 
