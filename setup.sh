@@ -73,6 +73,8 @@ pip install deepreplay==0.1.1a2
 
 pip install scikit-image==0.13.1
 
+conda install qgrid
+
 ### dlib
 cd /opt
 git clone https://github.com/davisking/dlib ; cd dlib
