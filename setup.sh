@@ -71,6 +71,7 @@ pip install eli5==0.8.1
 pip install scikit-plot==0.3.7
 pip install deepreplay==0.1.1a2
 pip install hyperas==0.4.1
+pip install albumentations==0.2.2
 
 pip install scikit-image==0.13.1
 
