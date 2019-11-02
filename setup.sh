@@ -60,6 +60,7 @@ python setup.py clean
 #conda install -c conda-forge -y keras==2.1.5
 conda install tensorflow
 conda install keras
+conda install -c conda-forge imbalanced-learn
 
 ### others
 pip install hyperopt==0.1.1
