@@ -56,6 +56,7 @@ conda install -y tensorflow=1.14
 conda install -c conda-forge -y imbalanced-learn
 
 conda install -c conda-forge -y tqdm
+conda install -c conda-forge category_encoders
 conda install -y gensim=3.4.0
 conda install -y mysqlclient
 conda install -y sqlalchemy
