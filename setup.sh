@@ -33,7 +33,7 @@ python setup.py install
 python setup.py clean
 
 ### Catboost
-pip install catboost=0.12.2
+pip install catboost=0.23.1
 
 ### tf-cnnvis
 cd /opt
