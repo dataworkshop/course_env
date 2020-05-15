@@ -9,7 +9,7 @@ cd /opt
 ## Anaconda install
 
 wget https://repo.continuum.io/archive/Anaconda3-2020.02-Linux-x86_64.sh
-echo "c9af603d89656bc89680889ef1f92623 Anaconda3-2020.02-Linux-x86_64.sh" | md5sum -c
+echo "17600d1f12b2b047b62763221f29f2bc Anaconda3-2020.02-Linux-x86_64.sh" | md5sum -c
 bash Anaconda3-2020.02-Linux-x86_64.sh -b
 
 export PATH="$HOME/anaconda3/bin:$PATH"
