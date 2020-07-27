@@ -11,7 +11,8 @@ wget https://repo.continuum.io/archive/Anaconda3-2020.07-Linux-x86_64.sh
 echo "1046c40a314ab2531e4c099741530ada Anaconda3-2020.07-Linux-x86_64.sh" | md5sum -c
 bash Anaconda3-2020.07-Linux-x86_64.sh -b
 
-export PATH="$HOME/anaconda3/bin:$PATH"
+echo 'export PATH="$HOME/anaconda3/bin:$PATH"' > ~/.bash_profile
+source ~/.bash_profile
 
 ## Configure jupyter
 jupyter notebook --generate-config
