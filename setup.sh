@@ -26,21 +26,10 @@ pip install --upgrade pip
 sudo chown -R $USER /opt
 cd /opt
 
-### LightGBM
-
-git clone --recursive https://github.com/Microsoft/LightGBM ; cd LightGBM
-mkdir build ; cd build
-cmake ..
-make
-cd ../python-package
-python setup.py install
-python setup.py clean
-
-### Catboost
-conda install -c conda-forge -y catboost=0.23.2
-
-### XGBoost 
+### install GBM
 conda install -c conda-forge -y xgboost=1.1.1
+conda install -c conda-forge -y catboost=0.23.2
+conda install -c conda-forge -y lightgbm=2.3.0
 
 
 ### tensorflow & keras
@@ -48,10 +37,11 @@ conda install -c conda-forge -y xgboost=1.1.1
 #conda install -c conda-forge -y keras==2.1.5
 
 conda install -y tensorflow=1.14
-conda install -c conda-forge -y imbalanced-learn
+
 
 conda install -c conda-forge -y tqdm
 conda install -c conda-forge category_encoders
+conda install -c conda-forge -y imbalanced-learn
 conda install -y gensim=3.4.0
 conda install -y mysqlclient
 conda install -y sqlalchemy
