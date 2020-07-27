@@ -7,10 +7,9 @@ sudo chown -R `whoami`:`whoami` /opt
 cd /opt
 
 ## Anaconda install
-
-wget https://repo.continuum.io/archive/Anaconda3-2020.02-Linux-x86_64.sh
-echo "17600d1f12b2b047b62763221f29f2bc Anaconda3-2020.02-Linux-x86_64.sh" | md5sum -c
-bash Anaconda3-2020.02-Linux-x86_64.sh -b
+wget https://repo.continuum.io/archive/Anaconda3-2020.07-Linux-x86_64.sh
+echo "1046c40a314ab2531e4c099741530ada Anaconda3-2020.07-Linux-x86_64.sh" | md5sum -c
+bash Anaconda3-2020.07-Linux-x86_64.sh -b
 
 export PATH="$HOME/anaconda3/bin:$PATH"
 
