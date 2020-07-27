@@ -22,8 +22,12 @@ sed -i -e "s/#c.NotebookApp.ip = 'localhost'/c.NotebookApp.ip = '0.0.0.0'/g" $HO
 #update pip
 pip install --upgrade pip
 
-### LightGBM
+# setup opt directory
+sudo chown -R $USER /opt
 cd /opt
+
+### LightGBM
+
 git clone --recursive https://github.com/Microsoft/LightGBM ; cd LightGBM
 mkdir build ; cd build
 cmake ..
