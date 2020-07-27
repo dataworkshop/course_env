@@ -37,20 +37,10 @@ python setup.py install
 python setup.py clean
 
 ### Catboost
-pip install catboost=0.23.1
+conda install -c conda-forge -y catboost=0.23.2
 
-### tf-cnnvis
-cd /opt
-git clone https://github.com/InFoCusp/tf_cnnvis.git
-cd tf_cnnvis
-python setup.py install
-python setup.py clean
-
-### MxNet
-#cd /opt
-#git clone --recursive https://github.com/apache/incubator-mxnet.git mxnet --branch 0.12.0; cd mxnet
-#make -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas
-#python setup.py install
+### XGBoost 
+conda install -c conda-forge -y xgboost=1.1.1
 
 
 ### tensorflow & keras
@@ -65,7 +55,7 @@ conda install -c conda-forge category_encoders
 conda install -y gensim=3.4.0
 conda install -y mysqlclient
 conda install -y sqlalchemy
-conda install -c conda-forge -y xgboost
+
 conda install -y pandas
 conda install -y qgrid
 conda install -y numpy=1.15.4
