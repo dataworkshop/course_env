@@ -27,7 +27,7 @@ sudo chown -R $USER /opt
 cd /opt
 
 ### install GBM
-conda install -c conda-forge -y xgboost=1.1.1
+conda install -c conda-forge -y xgboost=1.3.0
 conda install -c conda-forge -y catboost=0.23.2
 conda install -c conda-forge -y lightgbm=2.3.0
 
